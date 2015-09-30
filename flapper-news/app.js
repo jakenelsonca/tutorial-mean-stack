@@ -5,6 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// db schemas
+var mongoose = require('mongoose');
+require('./models/Posts');
+require('./models/Comments');
+// connect to db
+mongoose.connect('mongodb://localhost/news');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
