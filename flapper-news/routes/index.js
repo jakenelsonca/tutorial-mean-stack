@@ -4,12 +4,9 @@ var mongoose = require('mongoose');
 var Post = mongoose.model('Post');
 var Comment = mongoose.model('Comment');
 
-/* GET home page. */
-/*router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'Express'
-  });
-});*/
+router.get('/', function(req, res, next) {
+  res.render('index', {});
+});
 
 router.param('post', function(req, res, next, id) {
   var query = Post.findById(id);

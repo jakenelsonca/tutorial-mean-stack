@@ -2,3 +2,6 @@
 
 [Learn to Build Modern Web Apps with MEAN](https://thinkster.io/mean-stack-tutorial#getting-user-input)
 
+# details
+
+* require mongod to be running
